@@ -5,12 +5,12 @@
 ** Login   <brice@epitech.net>
 ** 
 ** Started on  Sun Dec 11 17:12:41 2016 lang-nguyen brice
-** Last update Fri Dec 16 15:55:55 2016 lang-nguyen brice
+** Last update Sun Dec 18 17:46:30 2016 lang-nguyen brice
 */
 
-#include <ncurses/curses.h>
+#include <curses.h>
 #include <stdlib.h>
-#include "my.h"
+#include "include/my.h"
 
 int	check(char *map)
 {

@@ -5,47 +5,47 @@
 ## Login   <brice@epitech.net>
 ## 
 ## Started on  Sun Dec 11 17:43:57 2016 lang-nguyen brice
-## Last update Sun Dec 18 13:37:53 2016 lang-nguyen brice
+## Last update Sun Dec 18 17:38:01 2016 lang-nguyen brice
 ##
 
 CC	= gcc
 
 RM	= rm -f
 
-CFLAGS	+= -Wall -Wextra
-CFLAGS	+= -lncurses
-CFLAGS	+= -I./include
+CFLAGS	+= -Wall -Wextra -Werror
 
 NAME	= my_sokoban
 
 SRCS	= main.c \
 	key.c \
 	game.c \
-	src/error.c \
-	src/check_o.c \
-	src/invalid_size.c \
-	src/load_map.c \
-	src/map_to_reload_map.c \
-	src/my_strlen.c \
-	src/notice.c \
-	src/reload_map.c \
-	src/size.c \
-	src/where_is_p.c \
-	src/how_many_x.c \
-	src/lock_or_not.c \
-	src/where_is_x.c \
-	src/move/up.c \
-	src/move/down.c \
-	src/move/left.c \
-	src/move/right.c
+	error.c \
+	check_o.c \
+	invalid_size.c \
+	load_map.c \
+	map_to_reload_map.c \
+	my_strlen.c \
+	notice.c \
+	reload_map.c \
+	size.c \
+	where_is_p.c \
+	how_many_x.c \
+	lock_or_not.c \
+	where_is_x.c \
+	up.c \
+	down.c \
+	left.c \
+	right.c
+
+OBJS	= $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(SRCS) -o $(NAME) $(CFLAGS)
+$(NAME): $(OBJS)
+	$(CC) $(OBJS) -lncurses -o $(NAME) $(CFLAGS)
 
 clean:
-	$(RM) $(NAME)
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)

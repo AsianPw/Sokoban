@@ -5,12 +5,11 @@
 ** Login   <brice@epitech.net>
 ** 
 ** Started on  Wed Dec 14 13:59:28 2016 lang-nguyen brice
-** Last update Fri Dec 16 23:24:41 2016 lang-nguyen brice
+** Last update Sun Dec 18 17:45:59 2016 lang-nguyen brice
 */
 
-#include <ncurses/curses.h>
-
-#include "my.h"
+#include <curses.h>
+#include "include/my.h"
 
 int	key(char *map, char *map_reload, int i, t_my_size *size)
 {

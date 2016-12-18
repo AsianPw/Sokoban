@@ -5,13 +5,13 @@
 ** Login   <brice@epitech.net>
 ** 
 ** Started on  Wed Dec 14 15:16:04 2016 lang-nguyen brice
-** Last update Sun Dec 18 13:24:49 2016 lang-nguyen brice
+** Last update Sun Dec 18 17:45:17 2016 lang-nguyen brice
 */
 
-#include <ncurses/curses.h>
+#include <curses.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "my.h"
+#include "include/my.h"
 
 int		game_while(t_my_size *size, char *map, char *map_reload)
 {
