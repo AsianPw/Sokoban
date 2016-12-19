@@ -5,7 +5,7 @@
 ** Login   <brice@epitech.net>
 ** 
 ** Started on  Sun Dec 11 17:39:44 2016 lang-nguyen brice
-** Last update Fri Dec 16 23:25:37 2016 lang-nguyen brice
+** Last update Mon Dec 19 16:54:58 2016 lang-nguyen brice
 */
 
 #define ERROR_OPEN "Unable to load the map\n"
@@ -32,7 +32,7 @@ char		*check_o(char *map_reload, char *map);
 int		my_strlen(char *str);
 int		where_is_p(char *map);
 int		key(char *map, char *map_reload, int i, t_my_size *size);
-int		check(char *map);
+int		check(char *map, char *map_reload);
 int		win(int i, char *map, t_my_size *size);
 int		game_while(t_my_size *size, char *map, char *map_reload);
 int		lock_or_not(char *map, t_my_size *size, t_my_pos_X *X);

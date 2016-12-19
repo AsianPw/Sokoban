@@ -5,14 +5,14 @@
 ** Login   <brice@epitech.net>
 ** 
 ** Started on  Sun Dec 11 17:12:41 2016 lang-nguyen brice
-** Last update Sun Dec 18 17:46:30 2016 lang-nguyen brice
+** Last update Mon Dec 19 16:54:41 2016 lang-nguyen brice
 */
 
 #include <curses.h>
 #include <stdlib.h>
 #include "include/my.h"
 
-int	check(char *map)
+int	check(char *map, char *map_reload)
 {
   int	i;
 
@@ -20,6 +20,8 @@ int	check(char *map)
   while (map[i] != '\0')
     {
       if (map[i] == 'O')
+	return (0);
+      else if (map_reload[i] == 'O' && map[i] == 'P')
 	return (0);
       i++;
     }
