@@ -5,7 +5,7 @@
 ## Login   <brice@epitech.net>
 ## 
 ## Started on  Sun Dec 11 17:43:57 2016 lang-nguyen brice
-## Last update Tue Dec 20 18:40:48 2016 lang-nguyen brice
+## Last update Tue Dec 20 19:49:36 2016 lang-nguyen brice
 ##
 
 CC	= gcc
@@ -16,33 +16,14 @@ CFLAGS	+= -Wall -Wextra -Werror
 
 NAME	= my_sokoban
 
-SRCS	= main.c \
-	key.c \
-	game.c \
-	error.c \
-	check_o.c \
-	invalid_size.c \
-	load_map.c \
-	map_to_reload_map.c \
-	my_strlen.c \
-	notice.c \
-	reload_map.c \
-	size.c \
-	where_is_p.c \
-	how_many_x.c \
-	lock_or_not.c \
-	where_is_x.c \
-	up.c \
-	down.c \
-	left.c \
-	right.c
+SRCS	= main.c
 
 OBJS	= $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(OBJS) -lncurses -o $(NAME) $(CFLAGS)
+	$(CC) -g3 $(OBJS) -lncurses -o $(NAME) $(CFLAGS)
 
 clean:
 	$(RM) $(OBJS)
